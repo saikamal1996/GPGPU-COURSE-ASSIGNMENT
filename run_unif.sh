@@ -1,0 +1,21 @@
+nvcc naive_unified.cu -o unif_run 
+nvprof --log-file op_unif_1_1 ./unif_run 1 1
+nvprof --log-file op_unif_1_2 ./unif_run 1 2
+nvprof --log-file op_unif_1_3 ./unif_run 1 3
+nvprof --log-file op_unif_1_4 ./unif_run 1 4
+nvprof --log-file op_unif_1_5 ./unif_run 1 5
+nvprof --log-file op_unif_32_1 ./unif_run 32 1
+nvprof --log-file op_unif_32_2 ./unif_run 32 2
+nvprof --log-file op_unif_32_3 ./unif_run 32 3
+nvprof --log-file op_unif_32_4 ./unif_run 32 4
+nvprof --log-file op_unif_32_5 ./unif_run 32 5
+nvprof --log-file op_unif_128_1 ./unif_run 128 1
+nvprof --log-file op_unif_128_2 ./unif_run 128 2
+nvprof --log-file op_unif_128_3 ./unif_run 128 3
+nvprof --log-file op_unif_128_4 ./unif_run 128 4
+nvprof --log-file op_unif_128_5 ./unif_run 128 5
+nvprof --log-file op_unif_256_1 ./unif_run 256 1
+nvprof --log-file op_unif_256_2 ./unif_run 256 2
+nvprof --log-file op_unif_256_3 ./unif_run 256 3
+nvprof --log-file op_unif_256_4 ./unif_run 256 4
+nvprof --log-file op_unif_256_5 ./unif_run 256 5
